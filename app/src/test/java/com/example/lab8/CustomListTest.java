@@ -64,6 +64,7 @@ public class CustomListTest {
 
     @Test
     public void testCountCities() {
+        list = MockCityList();
         // Initially, the list should be empty
         assertEquals(0, list.countCities());
 

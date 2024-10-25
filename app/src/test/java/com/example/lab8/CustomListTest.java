@@ -34,9 +34,7 @@ public class CustomListTest {
         list = MockCityList();
     }
 
-    /**
-     * Test for hasCity functionality
-     */
+    // From chatgpt, openai, "write a java implementation of a function that check if hasCity function is working correctly", 2024-10-25
     @Test
     public void testHasCity() {
         City city = new City("Vancouver", "BC");
@@ -49,6 +47,7 @@ public class CustomListTest {
         City anotherCity = new City("Toronto", "ON");
         assertFalse(list.hasCity(anotherCity));
     }
+    // From chatgpt, openai, "write a java implementation of a function that check if DeleteCity function is working correctly", 2024-10-25
     @Test
     public void testDeleteCity() {
         City city = new City("Calgary", "AB");
@@ -61,7 +60,7 @@ public class CustomListTest {
         list.deleteCity(city);
         assertFalse(list.hasCity(city));
     }
-
+    // From chatgpt, openai, "write a java implementation of a function that check if CountCities function is working correctly", 2024-10-25
     @Test
     public void testCountCities() {
         list = MockCityList();

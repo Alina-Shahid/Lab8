@@ -69,7 +69,8 @@ public class CustomListTest {
         assertEquals(0, list.countCities());
 
         // Add a city and check the count
-        list.addCity(new City("Toronto", "ON"));
+        City city=new City("Toronto", "ON");
+        list.addCity(city);
         assertEquals(1, list.countCities());
 
         // Add another city and check the count
@@ -77,7 +78,8 @@ public class CustomListTest {
         assertEquals(2, list.countCities());
 
         // Remove a city and check the count
-        list.deleteCity(new City("Toronto", "ON"));
+
+        list.deleteCity(city);
         assertEquals(1, list.countCities());
     }
 
